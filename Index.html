@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+    <div id="loginForm">
+        <h2>Login</h2>
+        <form id="loginFormContent">
+            <label for="loginEmail">Email:</label>
+            <input type="text" id="loginEmail" name="email" required>
+            <br>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="password" required>
+            <br>
+            <button type="submit">Login</button>
+            
+        </form>
+        <p>Are you new to wfrha <button class="signUpBtt" onclick="signupForm()">Sign up</button></p>
+    </div>
+
+    <div id="signupForm" style="display: none;">
+        <h2>Sign Up</h2>
+        <form id="signupFormContent">
+            <label for="UsernameSignUp">Username:</label>
+            <input type="text" id="UsernameSignUp" name="username" required>
+            <br>
+            <label for="signupEmail">Email:</label>
+            <input type="text" id="signupEmail" name="email" required>
+            <br>
+            <label for="signupPassword">Password:</label>
+            <input type="password" id="signupPassword" name="password" required>
+            <br>
+            <br>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="password" required>
+            <br>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <script src="./Script.js"></script>
+</body>
+</html>

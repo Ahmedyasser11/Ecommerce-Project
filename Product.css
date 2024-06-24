@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    width: 100%;
+    background-color: #695f5f90;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    background-color: #495057;
+    border-radius: 4px;
+}
+
+.btn-logout {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    margin-top: 60px; /* Adjust this value to match the height of the header */
+}
+
+.categories {
+    width: 20%;
+    padding: 15px;
+    background-color: #f4f4f4;
+}
+
+.categories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.categories li {
+    margin: 30px 0;
+}
+
+.categories a {
+    text-decoration: none;
+    color: #333;
+}
+
+.products {
+    width: 90%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    border-radius:15px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 15px;
+    width: calc(25% - 20px); /* Adjust width to fit 3 products per row */
+    box-sizing: border-box;
+}
+.product img {
+    max-width: 100%;
+    height: 250px;
+}
+
+.product h3 {
+    margin: 0 0 10px;
+}
+
+.product button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #555;
+}
+.product .add_toCart{
+    background-color: #4CAF50;
+    border-radius: 10px;
+}
+
+.product .add_toCart:hover{
+    background-color: #45a049;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #777;
+    padding-bottom: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin-right: 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
